@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orçamento pelo WhatsApp — HPR Hidráulica | Hortolândia/SP</title>
+<meta name="description" content="Simulador de orçamento da HPR Hidráulica: escolha o equipamento, o sintoma, anexe a foto e envie pelo WhatsApp ou e-mail.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="topbar"><span class="marquee">MACACO HIDRÁULICO <b>•</b> CARRINHO HIDRÁULICO <b>•</b> REPARO <b>•</b> TESTE <b>•</b> OFICINA ABERTA SEG–SEX 08:00–17:30 <b>•</b> RUA EMILIANO SANCHES, HORTOLÂNDIA/SP <b>•</b> TEL: (19) 3887-4757 <b>•</b> MACACO HIDRÁULICO <b>•</b> CARRINHO HIDRÁULICO <b>•</b> REPARO <b>•</b> TESTE <b>•</b> OFICINA ABERTA SEG–SEX 08:00–17:30 <b>•</b> RUA EMILIANO SANCHES, HORTOLÂNDIA/SP <b>•</b> TEL: (19) 3887-4757 <b>•</b> </span></div>
+<header class="site"><div class="wrap header-in">
+<a class="logo" href="index.html" aria-label="HPR Hidráulica — Início"><span class="l1">HPR <span>HIDRÁULICA</span></span><span class="l2">Oficina técnica • Hortolândia/SP</span></a>
+<button class="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<nav class="main" aria-label="Navegação principal"><ul><li><a href="index.html">Início</a></li><li><a href="servicos.html">Serviços</a></li><li><a href="orcamento.html" class="active" aria-current="page">Orçamento WhatsApp</a></li><li><a href="como-funciona.html">Como Funciona</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contato.html">Contato</a></li></ul></nav>
+<a class="btn btn-amber header-cta" href="orcamento.html">Orçar no WhatsApp</a>
+</div></header>
+<main>
+<section><div class="wrap">
+<p class="eyebrow reveal">Sistema de pré-triagem hidráulica // Hortolândia-SP</p>
+<h1 class="reveal">Triagem técnica direta para a oficina</h1>
+<p class="lead reveal" style="margin-top:16px">Selecione os parâmetros do macaco ou carrinho hidráulico danificado. O simulador monta automaticamente a mensagem do orçamento.</p>
+<div class="chips reveal" style="margin-top:18px"><span class="tag">Unidade operacional Hortolândia • SP</span><span class="tag">Oficina: (19) 3887-4757</span></div>
+</div></section>
+<section style="padding-top:0"><div class="wrap bot-layout">
+<div class="phone reveal" id="quote-bot">
+<div class="phone-head"><span class="avatar">H</span><span class="who"><b data-business>HPR Hidráulica</b><span>Online • Oficina Hortolândia/SP</span></span><span class="tag amber mock-tag">Mock interativo</span></div>
+<div class="chat">
+<div class="bubble in"><span class="meta">Bancada técnica // agora</span>Olá! Bem-vindo à triagem rápida da HPR Hidráulica. Para adiantar seu diagnóstico e receber a estimativa na bancada de Hortolândia, preencha as etapas abaixo.</div>
+
+<div class="bot-step" data-step="1"><h4>Passo 01 — Qual o seu equipamento? <span class="req">* obrigatório</span></h4>
+<p class="hint">Selecione o tipo de equipamento com defeito.</p>
+<div class="opt-grid">
+<button type="button" class="opt" data-value="Macaco hidráulico"><span class="radio"></span>Macaco hidráulico</button>
+<button type="button" class="opt" data-value="Carrinho hidráulico"><span class="radio"></span>Carrinho hidráulico</button>
+<button type="button" class="opt" data-value="Outro"><span class="radio"></span>Outro</button>
+</div><p class="bot-err" role="alert"></p></div>
+
+<div class="bot-step" data-step="2"><h4>Passo 02 — Qual a falha principal? <span class="req">* obrigatório</span></h4>
+<p class="hint">Escolha o sintoma que você percebe no equipamento.</p>
+<div class="opt-grid">
+<button type="button" class="opt" data-value="Não levanta"><span class="radio"></span>Não levanta</button>
+<button type="button" class="opt" data-value="Vaza óleo"><span class="radio"></span>Vaza óleo</button>
+<button type="button" class="opt" data-value="Desce sozinho"><span class="radio"></span>Desce sozinho</button>
+<button type="button" class="opt" data-value="Faz barulho"><span class="radio"></span>Faz barulho</button>
+<button type="button" class="opt" data-value="Outro"><span class="radio"></span>Outro</button>
+</div><p class="bot-err" role="alert"></p></div>
+
+<div class="bot-step" data-step="3"><h4>Passo 03 — Registro visual (foto / plaqueta)</h4>
+<p class="hint">Foto da plaquinha ajuda — a foto da plaqueta de capacidade ou da haste acelera o diagnóstico na bancada. A foto é opcional.</p>
+<div class="upload-zone">
+<label class="btn btn-ghost file-btn" for="bot-photo">Anexar foto da máquina</label>
+<input type="file" id="bot-photo" accept="image/*" style="position:absolute;width:1px;height:1px;opacity:0" aria-label="Anexar foto do equipamento">
+<p style="font-size:13px;color:var(--grey);margin-top:10px">Câmera direta ou galeria • JPG ou PNG</p>
+<button type="button" class="linklike" id="bot-no-photo">Continuar sem foto</button></div>
+<div class="photo-preview" id="photo-preview"><img id="photo-preview-img" alt="Pré-visualização da foto anexada"><div><p class="fname" id="photo-preview-name"></p><p class="fsize" id="photo-preview-size"></p></div><button type="button" class="linklike" id="photo-remove">Remover</button></div>
+<p class="bot-err" role="alert"></p></div>
+
+<div class="bot-step" data-step="4"><h4>Passo 04 — Grau de urgência <span class="req">* obrigatório</span></h4>
+<p class="hint">Quando você precisa do equipamento de volta?</p>
+<div class="opt-grid">
+<button type="button" class="opt" data-value="Preciso hoje"><span class="radio"></span>Preciso hoje</button>
+<button type="button" class="opt" data-value="Esta semana"><span class="radio"></span>Esta semana</button>
+<button type="button" class="opt" data-value="Sem pressa"><span class="radio"></span>Sem pressa</button>
+</div><p class="bot-err" role="alert"></p></div>
+
+<div class="bot-step" data-step="5"><h4>Passo 05 — Seus dados para contato <span class="req">* obrigatório</span></h4>
+<p class="hint">Para a oficina retornar com o diagnóstico e o orçamento.</p>
+<div class="field"><label for="bot-name">Seu nome / empresa *</label><input type="text" id="bot-name" autocomplete="name" placeholder="Ex.: João da Silva — Mecânica Silva"><span class="err" role="alert"></span></div>
+<div class="field"><label for="bot-whatsapp">WhatsApp / telefone *</label><input type="tel" id="bot-whatsapp" autocomplete="tel" placeholder="Ex.: (19) 98877-6655"><span class="err" role="alert"></span></div>
+<button type="button" class="btn btn-amber btn-block" id="bot-step5-next">Ver resumo da mensagem</button></div>
+
+<div id="bot-summary-wrap" style="display:none">
+<div class="bot-step" style="border-color:var(--amber)">
+<h4>Resumo gerado automaticamente</h4>
+<p class="hint">Confira a mensagem antes de enviar. Nada é enviado sem a sua confirmação.</p>
+<div class="summary" id="bot-summary"></div>
+<label class="consent"><input type="checkbox" id="bot-consent"> <span>Concordo que meus dados de contato e imagens enviados sejam usados única e exclusivamente para a elaboração e resposta deste orçamento, nos termos da LGPD (Lei nº 13.709/2018).</span></label>
+<p class="bot-err" id="bot-send-err" role="alert"></p>
+<a class="btn btn-amber btn-block" id="bot-send-wa" href="#" target="_blank" rel="noopener">Enviar este orçamento pelo WhatsApp</a>
+<p class="wa-note"><b>[WhatsApp — a confirmar]</b> O número (19) 3887-4757 é o telefone verificado da oficina; a confirmação de que ele também atende pelo WhatsApp ainda está pendente. Se preferir, use o e-mail abaixo.</p>
+<a class="btn btn-ghost btn-block" id="bot-send-mail" href="#" style="margin-top:10px">Enviar por e-mail (hidraulicaramos@bol.com.br)</a>
+<button type="button" class="linklike" id="bot-restart" style="margin-top:12px">Recomeçar a triagem</button>
+</div></div>
+</div></div>
+
+<div>
+<div class="reveal"><p class="eyebrow">O que acontece após o envio?</p>
+<ol class="side-list">
+<li><b>Triagem na oficina</b><p>Nossa bancada em Hortolândia/SP recebe o resumo com os sintomas e a imagem do componente.</p></li>
+<li><b>Avaliação por técnico especializado</b><p>Um técnico examina o defeito (haste riscada, gaxeta rompida ou perda de vazão) e devolve a prévia técnica — sem prometer prazo.</p></li>
+<li><b>Atendimento direto, sem robôs</b><p>Conversa transparente e objetiva com profissionais que trabalham com o seu equipamento.</p></li>
+</ol></div>
+<div class="panel reveal" style="margin-top:28px"><p class="eyebrow">Condições sob consulta (rigor total)</p>
+<ul class="check-list">
+<li><b>Valores e estimativas — sob consulta técnica</b>Nenhum valor é passado sem aferição do equipamento.</li>
+<li><b>Teste em bancada — carga real</b>Todo equipamento recondicionado só é liberado após pressurização contínua na bancada de testes.</li>
+<li><b>Qualidade garantida</b>Garantimos um trabalho de alta qualidade a um preço competitivo.</li>
+</ul></div>
+<div class="panel reveal" style="margin-top:20px"><p class="eyebrow">Privacidade &amp; LGPD // Lei nº 13.709/2018</p>
+<p style="font-size:14px;color:#C9C6BF">Seus dados de contato e imagens enviadas destinam-se única e exclusivamente à elaboração e resposta do orçamento solicitado. Não compartilhamos seus dados com terceiros. Veja a <a href="privacidade.html">Política de Privacidade</a>.</p></div>
+<div class="panel reveal" style="margin-top:20px"><p class="eyebrow">Endereço da oficina</p>
+<p><strong>Rua Emiliano Sanches, Hortolândia/SP</strong><br><span style="color:var(--grey)">Traga seu macaco ou carrinho hidráulico diretamente para desmontagem e laudo.</span></p>
+<p class="mono" style="margin-top:12px">Seg a sex: 08:00 às 17:30 • Tel: (19) 3887-4757</p>
+<p style="margin-top:14px"><a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Emiliano+Sanches+Hortol%C3%A2ndia+SP" target="_blank" rel="noopener">Abrir rota no mapa</a></p></div>
+</div>
+</div></section>
+
+</main>
+<div class="hazard"></div>
+<footer class="site"><div class="wrap">
+<div class="foot-grid">
+<div><a class="logo" href="index.html"><span class="l1">HPR <span>HIDRÁULICA</span></span><span class="l2">Oficina técnica • Hortolândia/SP</span></a>
+<p style="margin-top:16px">Oficina técnica especializada em reparo de macacos e carrinhos hidráulicos em Hortolândia/SP. Diagnóstico, desmontagem, reparo e teste em bancada — sem intermediários.</p></div>
+<div><h4>Rotas de navegação</h4><ul><li><a href="index.html">Início</a></li><li><a href="servicos.html">Serviços</a></li><li><a href="orcamento.html">Orçamento WhatsApp</a></li><li><a href="como-funciona.html">Como Funciona</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contato.html">Contato</a></li></ul></div>
+<div><h4>Dados verificados da oficina</h4>
+<p><span class="mono">Endereço</span><br>Rua Emiliano Sanches, Hortolândia/SP<br>CEP 13186-484</p>
+<p style="margin-top:12px"><span class="mono">Telefone</span><br><a href="tel:+551938874757">(19) 3887-4757</a></p>
+<p style="margin-top:12px"><span class="mono">E-mail técnico</span><br><a href="mailto:hidraulicaramos@bol.com.br">hidraulicaramos@bol.com.br</a></p>
+<p style="margin-top:12px"><span class="mono">Horário</span><br>Segunda a sexta: 08:00 às 17:30</p></div>
+</div>
+<div class="foot-legal"><span>© HPR Hidráulica — Todos os direitos reservados • Hortolândia/SP</span>
+<span><a href="privacidade.html">Política de Privacidade (LGPD)</a> &nbsp;•&nbsp; <a href="termos.html">Termos de Uso</a></span></div>
+</div></footer>
+<nav class="tabbar" aria-label="Navegação móvel"><a href="index.html"><span class="ic">01</span>Início</a><a href="servicos.html"><span class="ic">02</span>Serviços</a><a href="orcamento.html" class="active"><span class="ic">03</span>Orçar</a><a href="como-funciona.html"><span class="ic">04</span>Fluxo</a><a href="contato.html"><span class="ic">05</span>Contato</a></nav>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
